@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários - de Coleta de Informações Pessoais </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Formulários <br> Coleta de Informações Pessoais </h1>
+  <div id="main-container">
+    <h1> Informações pessoais</h1>
+    <form id="register-form">
+
+      <div class="full-box spacing">
+        <label for="Nome"> Nome Completo </label>
+        <input type="text" name="name" id="name" placeholder="Digite o seu nome">
+      </div>
+
+      <div class="full-box">
+        <label for="email"> E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+      </div>
+
+      <div class="half-box">
+        <label for="DataNascimento">Data de Nascimento</label>
+        <input type="date" name="DataNascimento" id="DataNascimento" placeholder="D/M/Ano" </div>
+        <div class="half-box">
+          <label for="login">Login</label>
+          <input type="text" name="login" id="login" placeholder="Digite seu nome de usuario">
+        </div>
+
+        <div class="half-box spacing">
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha">
+        </div>
+        <div class="half-box">
+          <label for="Estado">Estado</label>
+          <select name="Estado" id="estado">
+            <option value="Goias"> Goiás </option>
+            <option value="Brasilia"> Brasilia </option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="São Paulo">São Paulo </option>
+          </select>
+        </div>
+
+        <div class="full-box">
+          <label for="radio">Faixa etária:</label><br>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">Maior ou igual a 18 anos</label>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2">Maior de 18 anos</label>
+          </div>
+        </div>
+
+        <div class="half-box">
+          <input type="submit" id="btn-submit" value="Limpar">
+        </div>
+        <div class="half-box">
+          <input type="submit" id="btn-submit" value="Efetuar Cadastro">
+        </div>
+    </form>
+  </div>
+
+  <p class="error-validation template"></p>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

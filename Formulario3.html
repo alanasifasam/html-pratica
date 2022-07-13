@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários - de Coleta de Informações Pessoais </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Formulários <br> Publicação de Artigos </h1>
+  <div id="main-container">
+    <h1> Artigo</h1>
+    <form id="register-form">
+
+      <div class="full-box spacing">
+        <label for="Nome"> Título</label>
+        <input type="text" name="name" id="name" placeholder="Digite o Título">
+      </div>
+
+      <div class="half-box">
+        <label for="DataPublicacao">Data da Publicação</label>
+        <input type="date" name="DataPublicacao" id="DataPublicacao" placeholder="D/M/Ano" </div>
+        <div class="half-box">
+
+
+
+          <div class="half-box">
+            <label for="AreaTexto">Palavras-Chave do artigo: </label>
+            <textarea name="AreaTexto"> Digite o texto Aqui </textarea>
+          </div>
+
+          <div class="full-box"><br>
+            <form action="" method="" enctype="multipart/form-data">
+              <label for="File">Enviar artigo(formato .PDF, máximo de 50KB):</label><br>
+              <input type="file" name="file">
+          </div>
+
+
+          <div class="half-box">
+            <input type="submit" id="btn-submit" value="Enviar Artigo">
+          </div>
+
+    </form>
+  </div>
+
+  <p class="error-validation template"></p>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
